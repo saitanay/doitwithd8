@@ -1,0 +1,4 @@
+simple_fb_connect_appid: 12345
+simple_fb_connect_skey: 12345
+simple_fb_connect_login_only: 1
+simple_fb_connect_post_login_url: user

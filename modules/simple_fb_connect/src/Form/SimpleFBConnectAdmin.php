@@ -19,6 +19,7 @@ class SimpleFBConnectAdmin extends ConfigFormBase{
      * {@inheritdoc}
      */
     public function buildForm(array $form, FormStateInterface $form_state) {
+//        dpm(\Drupal::config('simple_fb_connect.settings')->get('simple_fb_connect_appid'));
         $form['simple_fb_connect_appid'] = array(
             '#type' => 'textfield',
             '#required' => TRUE,
@@ -65,7 +66,6 @@ class SimpleFBConnectAdmin extends ConfigFormBase{
      * {@inheritdoc}
      */
     public function submitForm(array &$form, FormStateInterface $form_state) {
-        dpm($form_state->getValue('simple_fb_connect_appid'));
         dpm($form_state->getValue('simple_fb_connect_skey'));
         \Drupal::config('simple_fb_connect.settings')->set('simple_fb_connect_appid',$form_state->getValue('simple_fb_connect_appid'));
         \Drupal::config('simple_fb_connect.settings')->set('simple_fb_connect_skey',$form_state->getValue('simple_fb_connect_skey'));
