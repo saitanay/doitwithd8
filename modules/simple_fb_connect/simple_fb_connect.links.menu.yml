@@ -1,0 +1,5 @@
+simple_fb_connect_admin:
+  title: Simple Facebook Connect
+  description: 'Simple FB Connect module configuration'
+  route_name: simple_fb_connect_admin
+

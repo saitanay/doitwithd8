@@ -1,12 +1,12 @@
-simple_fb_connect.simple_fb_connect_login:
+simple_fb_connect_login:
   path: 'user/simple-fb-connect'
   defaults:
-    _content: '\Drupal\simple_fb_connect\Controller\SimpleFBConnectController::hello'
+    _content: '\Drupal\simple_fb_connect\Controller\SimpleFBConnectController::unified_login_register'
     _title: 'Register / Login with FB'
   requirements:
     _role : 'anonymous'
 
-simple_fb_connect.simple_fb_connect_admin:
+simple_fb_connect_admin:
   path: '/admin/config/people/simple-fb-connect'
   defaults:
     _title: 'Simple FB Connect Settings'
